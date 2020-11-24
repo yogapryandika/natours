@@ -9,6 +9,20 @@
 html {
   // this define what 1rem is
   font-size: 62.5%;
+
+  @include respons(tab-landscape) {
+    // width < 1200
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include respons(tab-potrait) {
+    // width < 900
+    font-size: 50%; // 1rem = 8px
+  }
+
+  @include respons(big-desktop) {
+    font-size: 75%; // 1rem = 12px
+  }
 }
 
 body {
