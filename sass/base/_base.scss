@@ -27,4 +27,9 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 3rem;
+
+  @include respons(tab-potrait) {
+    padding: 0;
+  }
 }

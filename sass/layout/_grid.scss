@@ -4,6 +4,15 @@
 
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
+
+    @include respons(tab-potrait) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
+
+  @include respons(tab-potrait) {
+    max-width: 50rem;
+    padding: 0 3rem;
   }
 
   @include clearfix;
@@ -13,6 +22,15 @@
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respons(tab-potrait) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respons(tab-potrait) {
+      width: 100% !important;
     }
   }
 
